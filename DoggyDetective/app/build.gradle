@@ -30,5 +30,6 @@ dependencies {
 
     compile 'com.ibm.watson.developer_cloud:java-sdk:5.1.1'
     compile 'com.google.firebase:firebase-core:12.0.0'
+    compile group: 'com.googlecode.flickrj-android', name: 'flickrj-android', version: '2.1.0'
 }
 apply plugin: 'com.google.gms.google-services'
