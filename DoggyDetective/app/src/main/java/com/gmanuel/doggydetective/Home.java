@@ -15,17 +15,17 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        button = (Button) findViewById(R.id.start_button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openInput();
-            }
-        });
+    button = findViewById(R.id.start_button);
+    button.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            openInput();
+        }
+    });
     }
 
     public void openInput(){
-        Intent intent = new Intent(this, Input.class);
+        Intent intent = new Intent(this, Picture_Input.class);
         startActivity(intent);
     }
 }
