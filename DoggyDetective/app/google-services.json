@@ -8,6 +8,50 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:424020635528:android:b04c38e4da6d04f3",
+        "android_client_info": {
+          "package_name": "com.gmanuel.doggydetective"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424020635528-ik2gt58fv75bbphoi0i6fb0ms6lu4151.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gmanuel.doggydetective",
+            "certificate_hash": "2646f8464e47b428c0c57d60672cced77f60f041"
+          }
+        },
+        {
+          "client_id": "424020635528-1otroe86c0k7cp9dc4skrd04kona6c0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUqGgytDf2HBtAF04gjVT8PuATw_GgH3M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424020635528-1otroe86c0k7cp9dc4skrd04kona6c0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:424020635528:android:6c94766530b0285d",
         "android_client_info": {
           "package_name": "geomanuel.doggydetective"

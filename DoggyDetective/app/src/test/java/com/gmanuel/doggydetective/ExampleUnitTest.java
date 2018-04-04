@@ -1,4 +1,4 @@
-package geomanuel.doggydetective;
+package com.gmanuel.doggydetective;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package geomanuel.doggydetective;
+package com.gmanuel.doggydetective;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("geomanuel.doggydetective", appContext.getPackageName());
+        assertEquals("com.gmanuel.doggydetective", appContext.getPackageName());
     }
 }
