@@ -25,7 +25,7 @@ public class Home extends AppCompatActivity {
     }
 
     public void openInput(){
-        Intent intent = new Intent(this, Picture_Input.class);
+        Intent intent = new Intent(this, PictureInput.class);
         startActivity(intent);
     }
 }
