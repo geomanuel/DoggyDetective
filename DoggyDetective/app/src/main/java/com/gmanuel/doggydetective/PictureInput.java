@@ -20,6 +20,7 @@ public class PictureInput extends AppCompatActivity {
 
         Button cameraButton = findViewById(R.id.take_picture);
         imageView = findViewById(R.id.dog_photo);
+        Button choosePhoto = findViewById(R.id.choose_photo);
 
         cameraButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +29,15 @@ public class PictureInput extends AppCompatActivity {
                 startActivityForResult(takePicture, 1);
             }
         });
+        choosePhoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent pickPhoto = new Intent(Intent.ACTION_PICK,
+                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(pickPhoto , 1);//one can be replaced with any action code
+            }
+        });
+
 
     }
 
@@ -37,7 +47,22 @@ public class PictureInput extends AppCompatActivity {
         Bitmap bitmap = (Bitmap) data.getExtras().get("data");
         imageView.setImageBitmap(bitmap);
 
+        super.onActivityResult(requestCode, resultCode, data);
+        switch(requestCode) {
+            case 0:
+                if(resultCode == RESULT_OK){
+                    imageView.setImageURI(data.getData());
+                }
+
+                break;
+            case 1:
+                if(resultCode == RESULT_OK){
+                    imageView.setImageURI(data.getData());
+                }
+                break;
+        }
         nextInput();
+
 
     }
 
