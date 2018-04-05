@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Doggy Detective</string>
+    <string name="spin">Physical Characteristic</string>
 </resources>
