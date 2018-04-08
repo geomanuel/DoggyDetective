@@ -23,7 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".PictureInput" />
-        <activity android:name=".CharacteristicsInput"></activity>
+        <activity android:name=".CharacteristicsInput" />
+        <activity android:name=".BreedDescription">
+        </activity>
     </application>
 
 </manifest>
