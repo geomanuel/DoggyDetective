@@ -86,7 +86,7 @@
         app:layout_constraintStart_toEndOf="@+id/guideline" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/yes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -96,7 +96,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/no"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
