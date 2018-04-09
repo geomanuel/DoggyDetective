@@ -70,8 +70,6 @@ public class PictureInput extends AppCompatActivity {
                 break;
         }
         nextInput();
-
-
     }
 
     public void nextInput(){
