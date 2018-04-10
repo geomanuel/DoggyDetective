@@ -15,14 +15,14 @@ public class BehaviourController {
     private ArrayList<DogBreed> results;
     private Context context;
 
-    public BehaviourController(Context context) {
-        behaviourInput = "Playful";
+    public BehaviourController(Context context, String behaviourInput) {
+        this.behaviourInput = behaviourInput;
         this.context = context;
         this.results = new ArrayList<DogBreed>();
         determineBreeds(context);
     }
 
-    public ArrayList<DogBreed> determineBreeds(Context context) {
+    public void determineBreeds(Context context) {
         BreedList breedList = new BreedList(context);
 
         for (int i = 0; i < breedList.size(); i++) {
@@ -34,10 +34,10 @@ public class BehaviourController {
                 results.add(breed);
             }
         }
-        return results;
     }
 
     public ArrayList<DogBreed> getResults() {
+
         return results;
     }
 }

@@ -9,6 +9,7 @@ import android.widget.Button;
 public class BreedDescription extends AppCompatActivity {
     private Button yes;
     private Button no;
+    private Blackboard blackboard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,4 +39,5 @@ public class BreedDescription extends AppCompatActivity {
         Intent no = new Intent(this, PictureInput.class);
         startActivity(no);
     }
+
 }

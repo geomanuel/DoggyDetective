@@ -11,17 +11,19 @@ import java.util.ArrayList;
 public class PhysicalController {
 
     // size, color, tail length, tail shape, muzzle length, coat length, coat pattern, ear shape
-    private String[] physicalInput = {"Large","Gray", "Long", "Curved", "Long", "Long", "Bicolor", "Upright"};
+    //{"Large","Gray", "Long", "Curved", "Long", "Long", "Bicolor", "Upright"}
+    private String[] physicalInput;
     private ArrayList<DogBreed> results;
     private Context context;
 
-    public PhysicalController(Context context) {
+    public PhysicalController(Context context, String[] physicalInput) {
+        this.physicalInput = physicalInput;
         this.context = context;
         this.results = new ArrayList<DogBreed>();
         determineBreeds(context);
     }
 
-    public ArrayList<DogBreed> determineBreeds(Context context) {
+    public void determineBreeds(Context context) {
         BreedList breedList = new BreedList(context);
 
         for (int i = 0; i < breedList.size(); i++) {
@@ -46,7 +48,6 @@ public class PhysicalController {
             // Add to results list if physical characteristics match.
             results.add(breed);
         }
-        return results;
     }
 
     public ArrayList<DogBreed> getResults() {
