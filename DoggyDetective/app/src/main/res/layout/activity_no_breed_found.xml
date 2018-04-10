@@ -4,31 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    tools:context="com.gmanuel.doggydetective.NoBreedFound">
 
     <Button
-        android:id="@+id/start_button"
+        android:id="@+id/try_again_button"
         android:layout_width="172dp"
         android:layout_height="75dp"
         android:layout_marginBottom="80dp"
-        android:text="Start"
+        android:text="Try Again"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/breedDescription"
+        android:layout_width="345dp"
+        android:layout_height="77dp"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:src="@drawable/logo"
+        android:gravity="center"
+        android:text="Sorry, no dog breed was found. "
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.354" />
+        app:layout_constraintVertical_bias="0.399" />
 
 </android.support.constraint.ConstraintLayout>

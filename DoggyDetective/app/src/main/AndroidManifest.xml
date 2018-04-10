@@ -3,7 +3,7 @@
     package="com.gmanuel.doggydetective">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -11,9 +11,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Home">
@@ -25,8 +25,8 @@
         </activity>
         <activity android:name=".PictureInput" />
         <activity android:name=".CharacteristicsInput" />
-        <activity android:name=".BreedDescription">
-        </activity>
+        <activity android:name=".BreedDescription"></activity>
+        <activity android:name=".NoBreedFound"></activity>
     </application>
 
 </manifest>

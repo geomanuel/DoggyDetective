@@ -32,6 +32,7 @@
         android:id="@+id/breedDescription"
         android:layout_width="345dp"
         android:layout_height="77dp"
+        android:gravity="center"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:text="Please try again."
