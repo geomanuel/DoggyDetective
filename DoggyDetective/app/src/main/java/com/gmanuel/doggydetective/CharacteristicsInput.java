@@ -62,31 +62,36 @@ public class CharacteristicsInput extends AppCompatActivity {
 
         Blackboard blackboard = new Blackboard(physicalInput, behaviourInput, this);
         results = blackboard.determineBreeds();
-        //setContentView(R.layout.activity_breed_description);
-        //TextView textView = (TextView) findViewById(R.id.breedName);
-        //textView.setText(results.get(0).getBreed());
-        setContentView(R.layout.activity_breed_description);
-        TextView textView = (TextView) findViewById(R.id.breedName);
-        textView.setText(results.get(0).getBreed());
 
-        TextView textDescription = (TextView) findViewById(R.id.breedDescription);
-        textDescription.setText(results.get(0).getDescription());
+        if (results.isEmpty()) {
+            Intent next = new Intent(this, NoBreedFound.class);
+            startActivity(next);
+        } else {
+            //setContentView(R.layout.activity_breed_description);
+            //TextView textView = (TextView) findViewById(R.id.breedName);
+            //textView.setText(results.get(0).getBreed());
+            setContentView(R.layout.activity_breed_description);
+            TextView textView = (TextView) findViewById(R.id.breedName);
+            textView.setText(results.get(0).getBreed());
 
-        yes = findViewById(R.id.yes);
-        yes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openHome();
-            }
-        });
-        no = findViewById(R.id.no);
-        no.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openPictureInput();
-            }
-        });
+            TextView textDescription = (TextView) findViewById(R.id.breedDescription);
+            textDescription.setText(results.get(0).getDescription());
 
+            yes = findViewById(R.id.yes);
+            yes.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openHome();
+                }
+            });
+            no = findViewById(R.id.no);
+            no.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    openPictureInput();
+                }
+            });
+        }
 
 
 

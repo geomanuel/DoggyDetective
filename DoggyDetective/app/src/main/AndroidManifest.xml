@@ -3,7 +3,7 @@
     package="com.gmanuel.doggydetective">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -25,8 +25,8 @@
         </activity>
         <activity android:name=".PictureInput" />
         <activity android:name=".CharacteristicsInput" />
-        <activity android:name=".BreedDescription">
-        </activity>
+        <activity android:name=".BreedDescription"></activity>
+        <activity android:name=".NoBreedFound"></activity>
     </application>
 
 </manifest>
