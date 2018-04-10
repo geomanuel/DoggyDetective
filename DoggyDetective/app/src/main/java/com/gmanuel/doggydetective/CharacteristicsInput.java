@@ -2,14 +2,20 @@ package com.gmanuel.doggydetective;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.io.File;
 import java.util.ArrayList;
 
 public class CharacteristicsInput extends AppCompatActivity {
@@ -76,6 +82,15 @@ public class CharacteristicsInput extends AppCompatActivity {
 
             TextView textDescription = (TextView) findViewById(R.id.breedDescription);
             textDescription.setText(results.get(0).getDescription());
+            String uri = results.get(0).getBreed();
+            uri = "com.gmanuel.doggydetective:drawable/" + uri.replaceAll(" ", "_").toLowerCase();
+
+            ImageView imageView = (ImageView) findViewById(R.id.imageView2) ;
+
+            int id = getResources().getIdentifier(uri, null, null);
+            imageView.setImageResource(id);
+
+
 
             yes = findViewById(R.id.yes);
             yes.setOnClickListener(new View.OnClickListener() {

@@ -38,7 +38,7 @@
     <string-array name="physical_coatPattern">
         <item>Bicolor</item>
         <item>Merle</item>
-        <item>Tuzedo</item>
+        <item>Tuxedo</item>
         <item>No Pattern</item>
     </string-array>
 
