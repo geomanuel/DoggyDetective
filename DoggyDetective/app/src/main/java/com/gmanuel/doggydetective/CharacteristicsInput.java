@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -65,6 +66,9 @@ public class CharacteristicsInput extends AppCompatActivity {
         //setContentView(R.layout.activity_breed_description);
         //TextView textView = (TextView) findViewById(R.id.breedName);
         //textView.setText(results.get(0).getBreed());
+
+
+        
         setContentView(R.layout.activity_breed_description);
         TextView textView = (TextView) findViewById(R.id.breedName);
         textView.setText(results.get(0).getBreed());
@@ -86,6 +90,8 @@ public class CharacteristicsInput extends AppCompatActivity {
                 openPictureInput();
             }
         });
+
+
 
 
 
