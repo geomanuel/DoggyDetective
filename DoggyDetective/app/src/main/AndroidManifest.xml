@@ -3,6 +3,7 @@
     package="com.gmanuel.doggydetective">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -23,7 +24,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".PictureInput" />
-        <activity android:name=".CharacteristicsInput"></activity>
+        <activity android:name=".CharacteristicsInput" />
+        <activity android:name=".BreedDescription">
+        </activity>
     </application>
 
 </manifest>
