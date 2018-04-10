@@ -10,45 +10,62 @@
     <string-array name="physical_color">
         <item>White</item>
         <item>Black</item>
-        <item>Grey</item>
+        <item>Gray</item>
+        <item>Gold</item>
+        <item>Brown</item>
         <item>Yellow</item>
         <item>Red</item>
-        <item>Red</item>
-        <item>Red</item>
-        <item>Red</item>
-        <item>Red</item>
-        <item>Red</item>
-        <item>Red</item>
+        <item>Cream</item>
     </string-array>
 
     <string-array name="physical_tailShape">
-        <item>Curly</item>
+        <item>Curved</item>
         <item>Straight</item>
+        <item>Corkscrew</item>
+
     </string-array>
 
     <string-array name="physical_muzzleLength">
         <item>Long</item>
-        <item>Medium</item>
         <item>Short</item>
     </string-array>
 
     <string-array name="physical_lengthOfCoat">
         <item>Long</item>
-        <item>Medium</item>
         <item>Short</item>
     </string-array>
 
+    <string-array name="physical_coatPattern">
+        <item>Bicolor</item>
+        <item>Merle</item>
+        <item>Tuzedo</item>
+        <item>No Pattern</item>
+    </string-array>
+
     <string-array name="physical_earShape">
-        <item>1</item>
-        <item>2</item>
-        <item>2</item>
-        <item>2</item>
+        <item>Upright</item>
+        <item>Drop</item>
     </string-array>
 
     <string-array name="physical_tailLength">
         <item>Long</item>
-        <item>Medium</item>
         <item>Short</item>
+    </string-array>
+
+    <string-array name="behaviour">
+        <item>Loyal</item>
+        <item>Intelligent</item>
+        <item>Friendly</item>
+        <item>Wild</item>
+        <item>Playful</item>
+        <item>Work-Oriented</item>
+        <item>Active</item>
+        <item>Curious</item>
+        <item>Fearless</item>
+        <item>Alert</item>
+        <item>Gentle</item>
+        <item>Aggressive</item>
+        <item>Proud</item>
     </string-array>
 
 </resources>
