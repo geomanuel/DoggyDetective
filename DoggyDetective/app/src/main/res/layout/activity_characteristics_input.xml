@@ -27,25 +27,6 @@
         app:layout_constraintVertical_bias="0.411" />
 
     <Spinner
-        android:id="@+id/physical_whatever"
-        android:layout_width="148dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:drawSelectorOnTop="true"
-        android:entries="@array/physical_earShape"
-        android:prompt="@string/spin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
-
-    <Spinner
         android:id="@+id/physical_whatever4"
         android:layout_width="148dp"
         android:layout_height="45dp"
@@ -108,7 +89,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Length of coat"
+        android:text="Coat length"
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,7 +123,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Ear shape"
+        android:text="Coat pattern"
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,23 +133,6 @@
         app:layout_constraintVertical_bias="0.583" />
 
     <TextView
-        android:id="@+id/textView11"
-        android:layout_width="172dp"
-        android:layout_height="27dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Tail shape"
-        android:textAppearance="@android:style/TextAppearance.Material.Headline"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
-
-    <TextView
         android:id="@+id/textView12"
         android:layout_width="172dp"
         android:layout_height="33dp"
@@ -176,7 +140,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Tail shape"
+        android:text="Ear shape"
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
