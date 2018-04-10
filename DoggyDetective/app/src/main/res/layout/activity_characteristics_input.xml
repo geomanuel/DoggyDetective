@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.411" />
 
     <Spinner
-        android:id="@+id/physical_whatever4"
+        android:id="@+id/physical_behaviour"
         android:layout_width="148dp"
         android:layout_height="45dp"
         android:layout_marginBottom="8dp"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.766" />
 
     <Spinner
-        android:id="@+id/physical_whatever"
+        android:id="@+id/physical_earShape"
         android:layout_width="148dp"
         android:layout_height="45dp"
         android:layout_marginBottom="8dp"
