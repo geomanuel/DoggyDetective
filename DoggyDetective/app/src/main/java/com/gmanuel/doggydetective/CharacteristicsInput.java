@@ -3,12 +3,9 @@ package com.gmanuel.doggydetective;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-<<<<<<< HEAD
 import android.util.Log;
-=======
 import android.view.View;
 import android.widget.Button;
->>>>>>> 095dfb8620b68077ebea123a8a7e924672600365
 
 public class CharacteristicsInput extends AppCompatActivity {
     private Button next;
